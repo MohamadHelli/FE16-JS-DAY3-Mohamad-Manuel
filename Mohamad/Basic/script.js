@@ -36,8 +36,10 @@ let random1 = Math.floor(Math.random() * 41) - 5;
 console.log(random1);
 if (random1 < 10) {
     console.log("The weather is cold")
-} else if (random1 > 32) {
-    console.log("The weather is hot");
-} else {
+} else if (random1 < 32) {
     console.log("The weather is moderate");
+
+} else {
+    console.log("The weather is hot");
+
 }
